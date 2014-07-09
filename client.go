@@ -16,10 +16,10 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"github.com/mattbaird/elastigo/api"
-	"github.com/mattbaird/elastigo/cluster"
-	"github.com/mattbaird/elastigo/core"
-	"github.com/mattbaird/elastigo/indices"
+	"github.com/zenoss/elastigo/api"
+	"github.com/zenoss/elastigo/cluster"
+	"github.com/zenoss/elastigo/core"
+	"github.com/zenoss/elastigo/indices"
 	"log"
 	"time"
 )
