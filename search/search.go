@@ -14,11 +14,12 @@ package search
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/zenoss/elastigo/api"
-	"github.com/zenoss/elastigo/core"
 	"log"
 	"net/url"
 	"strings"
+
+	"github.com/zenoss/elastigo/api"
+	"github.com/zenoss/elastigo/core"
 
 	u "github.com/araddon/gou"
 )
@@ -39,7 +40,7 @@ var (
 //       ).Search("add"),
 //     ).Result()
 func Search(index string) *SearchDsl {
-	return &SearchDsl{Index: index, args: url.Values{}}
+	return &SearchDsl{Index: index, args: url.Values{"version": []string{"true"}}}
 }
 
 type SearchDsl struct {
